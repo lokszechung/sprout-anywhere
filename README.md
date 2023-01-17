@@ -1,6 +1,6 @@
 # Sprout Anywhere
 
-This is my third project completed during the end of week 8 and all of week 9 of General Assembly's Software Engineering bootcamp, having learned backened development for one and a half weeks - NodeJS, Express, MongoDB/Mongoose and building RESTful APIs.
+This is my third project completed during the end of week 8 and all of week 9 of General Assembly's Software Engineering bootcamp, having learned backend development for one and a half weeks - NodeJS, Express, MongoDB/Mongoose and building RESTful APIs.
 
 The aim of this project was to create a full-stack application using the MERN stack skills we had learnt. Inspired by one of our group member's love of plants, we decided to take a blogging/e-commerce approach for this project, taking houseplants as our theme. The app allows all users to browse plants, with Amazon links to buy and read blogs about all things plants, however more functionality is available to users who create an account. User who create an account are given their own profile page and can add plants and blogs themselves, and share their love and knowledge with the world!
 
