@@ -41,7 +41,7 @@ _&uarr; Profile Page &uarr;_
 - Be a complete product with multiple relationships and CRUD functionality
 - Implement thoughful user stories/wireframes
 - Have a visually impressive design
-- Be deployed online so it's publically accessible
+- Be deployed online so it's publicly accessible
 
 ---
 
