@@ -111,12 +111,10 @@ const Home = () => {
     const updatedDropValue = {
       ...dropValue, [key]: value,
     }
-    console.log(updatedDropValue)
     setDropValue(updatedDropValue)
     if (key === 'beginnerFriendly' || key === 'safeForPetsOrChildren') {
       return setFiltersPlants({ ...filtersPlants, [key]: value === 'true' }) // returns boolean
     }
-    console.log({ ...filtersPlants, [key]: value })
     return setFiltersPlants({ ...filtersPlants, [key]: value })
   }
 
@@ -159,16 +157,6 @@ const Home = () => {
     setTopThreePlants(topSortedThree)
   }, [plantsCompared])
 
-  // useEffect(() => {
-  //   console.log(topThreePlants)
-  // },[topThreePlants])
-
-  // useEffect(() => {
-  //   if (topThreePlants.length !== 0) {
-  //     plantRef?.current.scrollIntoView({ behavior: 'smooth' })
-  //   }  
-  // },[topThreePlants])
-
 
   // *** read about plants ***
 
@@ -190,7 +178,6 @@ const Home = () => {
     const updatedDropValue = {
       ...dropValue, [key]: value,
     }
-    console.log(updatedDropValue)
     setDropValue(updatedDropValue)
     return setFiltersBlogs({ ...filtersBlogs, [key]: value })
   }

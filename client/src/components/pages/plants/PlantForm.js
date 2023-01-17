@@ -50,7 +50,6 @@ const PlantForm = ({ handleSubmit, formFields, setFormFields, errors, setErrors,
 
   const handleChange = (e) => {
     if (e.target.name !== 'idealLocation') {
-      console.log(`${e.target.name} - ${e.target.value}`)
       setFormFields({ ...formFields, [e.target.name]: e.target.value })
       return setErrors({ ...errors, [e.target.name]: '', message: '' })
     }
@@ -69,7 +68,6 @@ const PlantForm = ({ handleSubmit, formFields, setFormFields, errors, setErrors,
   }
 
   const isLocationInArray = (location) => {
-    console.log(location)
     formFields.idealLocation.includes(location)
   }
 

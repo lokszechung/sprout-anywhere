@@ -33,14 +33,12 @@ const PlantNew = () => {
   // submit plant to database
   const handleSubmit = async (e) => {
     e.preventDefault()
-    console.log('submit clicked')
     try {
       const { data } = await axios.post('/api/plants', formFields, {
         headers: {
           Authorization: `Bearer ${getToken()}`,
         },
       })
-      console.log('submit successful', data._id)
       navigate(`/plants/${data._id}`)
     } catch (err) {
       console.log(err)

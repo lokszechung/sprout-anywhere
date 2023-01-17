@@ -31,7 +31,6 @@ const PlantsIndex = () => {
     const getPlant = async () => {
       try {
         const { data } = await axios.get(`/api/plants/${id}`)
-        console.log(data)
         setPlant(data)
       } catch (err) {
         setError(true)
@@ -70,7 +69,6 @@ const PlantsIndex = () => {
 
   const handleClick = async (e) => {
     try {
-      console.log(id)
       const { data } = await axios.post(`/api/plants/${id}/review`, reviewField, {
         headers: {
           Authorization: `Bearer ${getToken()}`,
@@ -80,7 +78,6 @@ const PlantsIndex = () => {
       setReviewField({
         text: '',
       })
-      console.log('review SUCCESS ->', data)
     } catch (err) {
       console.log('review FAIL ->', err)
       setError(err.response.data)

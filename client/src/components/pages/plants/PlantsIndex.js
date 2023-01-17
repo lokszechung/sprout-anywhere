@@ -95,7 +95,6 @@ const PlantsIndex = () => {
       // return whether matched = the amount of filters that are selected
       return noOfFiltersMatched === nonEmptyFiltersKeys.length
     })
-    console.log(filteredPlants)
     setFilterPlants(filteredPlants)
   }, [filters])  
 

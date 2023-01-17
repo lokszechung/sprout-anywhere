@@ -18,7 +18,6 @@ const NavbarDesktop = () => {
 
   const handleMenuClick = (e) => {
     e.stopPropagation()
-    console.log('menu clicked')
     setOpen(!open)
   }
   // const handleMouseOver = () => {

@@ -7,7 +7,6 @@ import { sendErrors, findPlant } from '../config/helpers.js'
 export const getAllPlants = async (_req, res) => {
   try {
     const plants = await Plant.find()
-    console.log(plants)
     return res.json(plants)
   } catch (err) {
     console.log(err)
@@ -19,7 +18,6 @@ export const getAllPlants = async (_req, res) => {
 export const addPlant = async (req, res) => {
   try {
     const plantToAdd = await Plant.create({ ...req.body, owner: req.currentUser._id })
-    console.log(plantToAdd)
     return res.status(201).json(plantToAdd)
   } catch (err) {
     console.log(err)
@@ -103,8 +101,6 @@ export const addPlantReview = async (req, res) => {
   try {
     const plant = await findPlant(req, res)
     if (plant) {
-      console.log('user', req.currentUser)
-      console.log('username', req.currentUser.username)
       const reviewWithOwner = { ...req.body, owner: req.currentUser._id, username: req.currentUser.username }
       plant.reviews.push(reviewWithOwner)
       await plant.save()

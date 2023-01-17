@@ -37,7 +37,6 @@ const PlantEdit = () => {
     const getData = async () => {
       try {
         const { data } = await axios.get(`/api/plants/${id}`)
-        console.log(data)
         setFormFields(data)
 
       } catch (err) {
@@ -48,21 +47,15 @@ const PlantEdit = () => {
     getData()
   }, [id])
 
-  useEffect(() => {
-    console.log(formFields)
-  }, [formFields])
-
   // submit plant edit to database
   const handleSubmit = async (e) => {
     e.preventDefault()
-    console.log('submit clicked')
     try {
       const { data } = await axios.put(`/api/plants/${id}`, formFields, {
         headers: {
           Authorization: `Bearer ${getToken()}`,
         },
       })
-      console.log('submit successful', data._id)
       navigate(`/plants/${data._id}`)
     } catch (err) {
       console.log(err)

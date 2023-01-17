@@ -18,7 +18,6 @@ const NavbarMobile = () => {
   const [open, setOpen] = useState(false)
  
   const handleMenuClick = () => {
-    console.log('menu clicked')
     setOpen(!open)
   }
   const handleSearchClick = () => {
@@ -31,10 +30,6 @@ const NavbarMobile = () => {
     }  
   }
   window.addEventListener('click', clickOutDropdown)
-
-  // useEffect(() => {
-  //   console.log(open)
-  // },[open])
 
   return (
     <Flex
