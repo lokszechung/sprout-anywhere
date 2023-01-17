@@ -7,7 +7,7 @@ The aim of this project was to create a full-stack application using the MERN st
 - **Project timeframe:** 8 days
 - **Team size:** 3 
 
-[Check it out here!](https://sprout-anywhere-project-3.herokuapp.com/)
+[Check it out here!](https://sprout-anywhere.herokuapp.com/)
 
 ![Sprout Anywhere Landing Page](/readme-images/sprout-anywhere-1.png)
 _&uarr; Landing Page &uarr;_
