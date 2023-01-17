@@ -60,7 +60,7 @@ export const getPlantsByCategory = async (req, res) => {
 
 export const updatePlant = async (req, res) => {
   try {
-    const { id } = req.paramsj
+    const { id } = req.params
     const plant = await Plant.findById(id)
     if (!plant) {
       throw new Error('Plant not found')
